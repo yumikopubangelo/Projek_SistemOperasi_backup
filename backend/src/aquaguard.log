@@ -3646,3 +3646,173 @@ elasticsearch.NotFoundError: NotFoundError(404, 'resource_not_found_exception', 
 [2025-11-25 18:17:38] [INFO] [SHUTDOWN] Complete
 [2025-11-25 18:17:43] [WARNING] 4 thread(s) still running
 [2025-11-25 18:17:43] [WARNING] Canceling 33 pending task(s)
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] [ES] Initializing client for: https://localhost:9200
+[2025-11-25 18:17:46] [INFO] [ES] Connecting to https://localhost:9200
+[2025-11-25 18:17:46] [INFO] [ES] Using CA cert: http_ca.crt
+[2025-11-25 18:17:46] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.027s]
+[2025-11-25 18:17:46] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.004s]
+[2025-11-25 18:17:46] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.003s]
+[2025-11-25 18:17:46] [INFO] [ES] Connected — Index 'depot_air_qc_data' contains 809 docs
+[2025-11-25 18:17:46] [INFO] [INIT] CSV Exporter enabled
+[2025-11-25 18:17:46] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-25 18:17:46] [INFO] [OK] Background workers started
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] ADAPTIVE BUFFERING SERVICE INITIALIZED
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] Buffer range: 5-100 docs
+[2025-11-25 18:17:46] [INFO] Interval range: 0.5-5.0s
+[2025-11-25 18:17:46] [INFO] CSV Export: Enabled
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] [OK] Alert monitoring worker started
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] ALERT SERVICE INITIALIZED
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:46] [INFO] Alert threshold: 5 anomalies/1h
+[2025-11-25 18:17:46] [INFO] Cooldown period: 30 minutes
+[2025-11-25 18:17:46] [INFO] CSV Export: Enabled
+[2025-11-25 18:17:46] [INFO] ======================================================================
+[2025-11-25 18:17:47] [INFO] [ML SERVICE] Initialized with jobs: anomali_kekeruhan, prediksi_tds_jenuh
+[2025-11-25 18:17:47] [INFO] [ML SERVICE] Initialized with jobs: anomali_kekeruhan, prediksi_tds_jenuh
+[2025-11-25 18:17:47] [INFO] ======================================================================
+[2025-11-25 18:17:47] [INFO] [START] Server starting on 0.0.0.0:5000
+[2025-11-25 18:17:47] [INFO] ======================================================================
+[2025-11-25 18:17:47] [INFO] Serving on http://0.0.0.0:5000
+[2025-11-25 18:17:50] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.004s]
+[2025-11-25 18:17:50] [INFO] [STATS] Fetching system statistics...
+[2025-11-25 18:17:50] [INFO] [ML STATUS] Checking job: anomali_kekeruhan
+[2025-11-25 18:17:50] [WARNING] Task queue depth is 1
+[2025-11-25 18:17:51] [INFO] GET https://localhost:9200/_ml/anomaly_detectors/anomali_kekeruhan [status:200 duration:0.036s]
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job result for anomali_kekeruhan: 1 jobs found
+[2025-11-25 18:17:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.037s]
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job anomali_kekeruhan state: unknown
+[2025-11-25 18:17:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.047s]
+[2025-11-25 18:17:51] [INFO] GET https://localhost:9200/_ml/anomaly_detectors/anomali_kekeruhan/_stats [status:200 duration:0.006s]
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job anomali_kekeruhan stats - state: opened, processed: 299
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Checking job: prediksi_tds_jenuh
+[2025-11-25 18:17:51] [INFO] GET https://localhost:9200/_ml/anomaly_detectors/prediksi_tds_jenuh [status:200 duration:0.018s]
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job result for prediksi_tds_jenuh: 1 jobs found
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job prediksi_tds_jenuh state: unknown
+[2025-11-25 18:17:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.051s]
+[2025-11-25 18:17:51] [INFO] GET https://localhost:9200/_ml/anomaly_detectors/prediksi_tds_jenuh/_stats [status:200 duration:0.012s]
+[2025-11-25 18:17:51] [INFO] [ML STATUS] Job prediksi_tds_jenuh stats - state: opened, processed: 299
+[2025-11-25 18:17:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-25 18:17:53] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=24, job_id=None
+[2025-11-25 18:17:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.046s]
+[2025-11-25 18:17:54] [INFO] [ML ANOMALIES] Found 0 total anomalies
+[2025-11-25 18:17:54] [INFO] [ML ANOMALIES] Returning 0 anomalies
+[2025-11-25 18:17:55] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=0.0, hours_back=24, job_id=None
+[2025-11-25 18:17:56] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.050s]
+[2025-11-25 18:17:56] [INFO] [ML ANOMALIES] Found 276 total anomalies
+[2025-11-25 18:17:56] [INFO] [ML ANOMALIES] Returning 100 anomalies
+[2025-11-25 18:17:57] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=25.0, hours_back=24, job_id=None
+[2025-11-25 18:17:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.047s]
+[2025-11-25 18:17:57] [INFO] [ML ANOMALIES] Found 0 total anomalies
+[2025-11-25 18:17:57] [INFO] [ML ANOMALIES] Returning 0 anomalies
+[2025-11-25 18:17:59] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=25.0, hours_back=168, job_id=None
+[2025-11-25 18:17:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.047s]
+[2025-11-25 18:17:59] [INFO] [ML ANOMALIES] Found 8 total anomalies
+[2025-11-25 18:17:59] [INFO] [ML ANOMALIES] Returning 8 anomalies
+[2025-11-25 18:18:00] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=75.0, hours_back=168, job_id=None
+[2025-11-25 18:18:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.045s]
+[2025-11-25 18:18:01] [INFO] [ML ANOMALIES] Found 0 total anomalies
+[2025-11-25 18:18:01] [INFO] [ML ANOMALIES] Returning 0 anomalies
+[2025-11-25 18:18:02] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:18:02] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.047s]
+[2025-11-25 18:18:02] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:18:02] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:18:03] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=6, job_id=None
+[2025-11-25 18:18:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.045s]
+[2025-11-25 18:18:03] [INFO] [ML ANOMALIES] Found 0 total anomalies
+[2025-11-25 18:18:03] [INFO] [ML ANOMALIES] Returning 0 anomalies
+[2025-11-25 18:18:04] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=24, job_id=None
+[2025-11-25 18:18:04] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.044s]
+[2025-11-25 18:18:04] [INFO] [ML ANOMALIES] Found 0 total anomalies
+[2025-11-25 18:18:04] [INFO] [ML ANOMALIES] Returning 0 anomalies
+[2025-11-25 18:18:06] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:18:06] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.048s]
+[2025-11-25 18:18:06] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:18:06] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:18:14] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,%40timestamp [status:200 duration:0.046s]
+[2025-11-25 18:18:15] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.048s]
+[2025-11-25 18:18:15] [INFO] [PREDICTION] Summary generated successfully
+[2025-11-25 18:18:15] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.047s]
+[2025-11-25 18:18:15] [INFO] [PREDICTION] Forecast generated: 12 points
+[2025-11-25 18:18:16] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.005s]
+[2025-11-25 18:18:36] [INFO] [STATS] Fetching system statistics...
+[2025-11-25 18:18:43] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.053s]
+[2025-11-25 18:18:50] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:18:50] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.047s]
+[2025-11-25 18:18:50] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:18:50] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:18:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-25 18:18:59] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,%40timestamp [status:200 duration:0.045s]
+[2025-11-25 18:18:59] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.047s]
+[2025-11-25 18:18:59] [INFO] [PREDICTION] Summary generated successfully
+[2025-11-25 18:18:59] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.060s]
+[2025-11-25 18:18:59] [INFO] [PREDICTION] Forecast generated: 12 points
+[2025-11-25 18:19:03] [INFO] [STATS] Fetching system statistics...
+[2025-11-25 18:19:03] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.002s]
+[2025-11-25 18:19:23] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:19:23] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.059s]
+[2025-11-25 18:19:23] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:19:23] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:19:31] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:19:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.047s]
+[2025-11-25 18:19:31] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:19:31] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:19:33] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-25 18:19:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,%40timestamp [status:200 duration:0.054s]
+[2025-11-25 18:19:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.050s]
+[2025-11-25 18:19:35] [INFO] [PREDICTION] Summary generated successfully
+[2025-11-25 18:19:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.050s]
+[2025-11-25 18:19:35] [INFO] [PREDICTION] Forecast generated: 12 points
+[2025-11-25 18:19:36] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-25 18:19:57] [INFO] POST https://localhost:9200/depot_air_qc_data/_search [status:200 duration:0.049s]
+[2025-11-25 18:19:58] [INFO] [ML ANOMALIES] Querying with: size=100, min_score=50.0, hours_back=168, job_id=None
+[2025-11-25 18:19:58] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search?ignore_unavailable=true [status:200 duration:0.055s]
+[2025-11-25 18:19:58] [INFO] [ML ANOMALIES] Found 4 total anomalies
+[2025-11-25 18:19:58] [INFO] [ML ANOMALIES] Returning 4 anomalies
+[2025-11-25 18:20:05] [INFO] [STATS] Fetching system statistics...
+[2025-11-25 18:20:05] [WARNING] Task queue depth is 1
+[2025-11-25 18:20:05] [WARNING] Task queue depth is 2
+[2025-11-25 18:20:05] [WARNING] Task queue depth is 3
+[2025-11-25 18:20:05] [WARNING] Task queue depth is 4
+[2025-11-25 18:20:10] [WARNING] Task queue depth is 5
+[2025-11-25 18:20:15] [WARNING] Task queue depth is 6
+[2025-11-25 18:20:15] [WARNING] Task queue depth is 7
+[2025-11-25 18:20:15] [WARNING] Task queue depth is 8
+[2025-11-25 18:20:15] [WARNING] Task queue depth is 9
+[2025-11-25 18:20:15] [WARNING] Task queue depth is 10
+[2025-11-25 18:20:26] [WARNING] Task queue depth is 11
+[2025-11-25 18:20:26] [WARNING] Task queue depth is 12
+[2025-11-25 18:20:26] [WARNING] Task queue depth is 13
+[2025-11-25 18:20:26] [WARNING] Task queue depth is 14
+[2025-11-25 18:20:26] [WARNING] Task queue depth is 15
+[2025-11-25 18:20:36] [WARNING] Task queue depth is 16
+[2025-11-25 18:20:36] [WARNING] Task queue depth is 17
+[2025-11-25 18:20:36] [WARNING] Task queue depth is 18
+[2025-11-25 18:20:36] [WARNING] Task queue depth is 19
+[2025-11-25 18:20:36] [WARNING] Task queue depth is 20
+[2025-11-25 18:20:46] [WARNING] Task queue depth is 21
+[2025-11-25 18:20:46] [WARNING] Task queue depth is 22
+[2025-11-25 18:20:46] [WARNING] Task queue depth is 23
+[2025-11-25 18:20:46] [WARNING] Task queue depth is 24
+[2025-11-25 18:20:46] [WARNING] Task queue depth is 25
+[2025-11-25 18:20:56] [WARNING] Task queue depth is 26
+[2025-11-25 18:20:56] [WARNING] Task queue depth is 27
+[2025-11-25 18:20:56] [WARNING] Task queue depth is 28
+[2025-11-25 18:20:56] [WARNING] Task queue depth is 29
+[2025-11-25 18:20:56] [WARNING] Task queue depth is 30
+[2025-11-25 18:21:06] [WARNING] Task queue depth is 31
+[2025-11-25 18:21:06] [WARNING] Task queue depth is 32
+[2025-11-25 18:21:06] [WARNING] Task queue depth is 33
+[2025-11-25 18:21:06] [WARNING] Task queue depth is 34
+[2025-11-25 18:21:06] [WARNING] Task queue depth is 35
+[2025-11-25 18:21:16] [WARNING] Task queue depth is 36
+[2025-11-25 18:21:16] [WARNING] Task queue depth is 37
+[2025-11-25 18:21:16] [WARNING] Task queue depth is 38
+[2025-11-25 18:21:16] [WARNING] Task queue depth is 39
+[2025-11-25 18:21:16] [WARNING] Task queue depth is 40
