@@ -1,0 +1,1100 @@
+[2025-11-24 12:26:11] [INFO] ======================================================================
+[2025-11-24 12:26:11] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-24 12:26:11] [INFO] ======================================================================
+[2025-11-24 12:26:11] [INFO] [INIT] Connecting to Elasticsearch: https://localhost:9200
+[2025-11-24 12:26:11] [INFO] [INIT] Using CA certificate: C:\Users\vanguard\OneDrive\Documents\Projek_SistemOperasi\http_ca.crt
+[2025-11-24 12:26:11] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.012s]
+[2025-11-24 12:26:11] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.002s]
+[2025-11-24 12:26:11] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.003s]
+[2025-11-24 12:26:11] [INFO] [SUCCESS] Connected to Elasticsearch
+[2025-11-24 12:26:11] [INFO] [INFO] Index 'depot_air_qc_data' has 651 documents
+[2025-11-24 12:26:11] [INFO] [INIT] CSV Exporter enabled
+[2025-11-24 12:26:11] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-24 12:26:11] [INFO] [INIT] Adaptive Bulk Buffer Manager started
+[2025-11-24 12:26:11] [INFO] [CONFIG] Buffer range: 5-100 docs
+[2025-11-24 12:26:11] [INFO] [CONFIG] Interval range: 0.5-5.0s
+[2025-11-24 12:26:11] [INFO] [INIT] Telegram Anomaly Notifier initialized
+[2025-11-24 12:26:12] [INFO] ======================================================================
+[2025-11-24 13:30:35] [INFO] ======================================================================
+[2025-11-24 13:30:35] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-24 13:30:35] [INFO] ======================================================================
+[2025-11-24 13:30:35] [INFO] [INIT] Connecting to Elasticsearch: https://localhost:9200
+[2025-11-24 13:30:35] [INFO] [INIT] Using CA certificate: http_ca.crt
+[2025-11-24 13:30:35] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.013s]
+[2025-11-24 13:30:35] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.003s]
+[2025-11-24 13:30:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.003s]
+[2025-11-24 13:30:35] [INFO] [SUCCESS] Connected to Elasticsearch
+[2025-11-24 13:30:35] [INFO] [INFO] Index 'depot_air_qc_data' has 651 documents
+[2025-11-24 13:30:35] [INFO] [INIT] CSV Exporter enabled
+[2025-11-24 13:30:35] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-24 13:30:35] [INFO] [INIT] Adaptive Bulk Buffer Manager started
+[2025-11-24 13:30:35] [INFO] [CONFIG] Buffer range: 5-100 docs
+[2025-11-24 13:30:35] [INFO] [CONFIG] Interval range: 0.5-5.0s
+[2025-11-24 13:30:35] [INFO] [INIT] Telegram Anomaly Notifier initialized
+[2025-11-24 13:30:36] [INFO] ======================================================================
+[2025-11-24 13:30:36] [INFO] [START] Server starting on 0.0.0.0:5000
+[2025-11-24 13:30:36] [INFO] ======================================================================
+[2025-11-24 13:30:36] [INFO] Serving on http://0.0.0.0:5000
+[2025-11-24 13:34:03] [INFO] [SHUTDOWN] Graceful shutdown initiated...
+[2025-11-24 13:34:03] [INFO] [SHUTDOWN] Complete
+[2025-11-24 13:34:06] [INFO] ======================================================================
+[2025-11-24 13:34:06] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-24 13:34:06] [INFO] ======================================================================
+[2025-11-24 13:34:06] [INFO] [INIT] Connecting to Elasticsearch: https://localhost:9200
+[2025-11-24 13:34:06] [INFO] [INIT] Using CA certificate: http_ca.crt
+[2025-11-24 13:34:06] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.022s]
+[2025-11-24 13:34:06] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.004s]
+[2025-11-24 13:34:06] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.005s]
+[2025-11-24 13:34:06] [INFO] [SUCCESS] Connected to Elasticsearch
+[2025-11-24 13:34:06] [INFO] [INFO] Index 'depot_air_qc_data' has 651 documents
+[2025-11-24 13:34:06] [INFO] [INIT] CSV Exporter enabled
+[2025-11-24 13:34:06] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-24 13:34:06] [INFO] [INIT] Adaptive Bulk Buffer Manager started
+[2025-11-24 13:34:06] [INFO] [CONFIG] Buffer range: 5-100 docs
+[2025-11-24 13:34:06] [INFO] [CONFIG] Interval range: 0.5-5.0s
+[2025-11-24 13:34:06] [INFO] [INIT] Telegram Anomaly Notifier initialized
+[2025-11-24 13:34:07] [INFO] ======================================================================
+[2025-11-24 13:34:07] [INFO] [START] Server starting on 0.0.0.0:5000
+[2025-11-24 13:34:07] [INFO] ======================================================================
+[2025-11-24 13:34:07] [INFO] Serving on http://0.0.0.0:5000
+[2025-11-24 13:35:53] [INFO] [SHUTDOWN] Graceful shutdown initiated...
+[2025-11-24 13:35:53] [INFO] [SHUTDOWN] Complete
+[2025-11-24 13:35:55] [INFO] ======================================================================
+[2025-11-24 13:35:55] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-24 13:35:55] [INFO] ======================================================================
+[2025-11-24 13:35:55] [INFO] [INIT] Connecting to Elasticsearch: https://localhost:9200
+[2025-11-24 13:35:55] [INFO] [INIT] Using CA certificate: http_ca.crt
+[2025-11-24 13:35:55] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.011s]
+[2025-11-24 13:35:55] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.002s]
+[2025-11-24 13:35:55] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.003s]
+[2025-11-24 13:35:55] [INFO] [SUCCESS] Connected to Elasticsearch
+[2025-11-24 13:35:55] [INFO] [INFO] Index 'depot_air_qc_data' has 651 documents
+[2025-11-24 13:35:55] [INFO] [INIT] CSV Exporter enabled
+[2025-11-24 13:35:55] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-24 13:35:55] [INFO] [INIT] Adaptive Bulk Buffer Manager started
+[2025-11-24 13:35:55] [INFO] [CONFIG] Buffer range: 5-100 docs
+[2025-11-24 13:35:55] [INFO] [CONFIG] Interval range: 0.5-5.0s
+[2025-11-24 13:35:55] [INFO] [INIT] Telegram Anomaly Notifier initialized
+[2025-11-24 13:35:56] [INFO] ======================================================================
+[2025-11-24 13:35:56] [INFO] [START] Server starting on 0.0.0.0:5000
+[2025-11-24 13:35:56] [INFO] ======================================================================
+[2025-11-24 13:35:56] [INFO] Serving on http://0.0.0.0:5000
+[2025-11-24 13:36:46] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.013s]
+[2025-11-24 13:36:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 13:36:47] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:36:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:36:47] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:36:50] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.048s]
+[2025-11-24 13:36:50] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:36:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:36:54] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:36:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:36:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:36:57] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:36:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:36:57] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:37:06] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:37:06] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:37:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:37:07] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:37:07] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 13:37:11] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.049s]
+[2025-11-24 13:37:11] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:37:17] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:37:17] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 13:37:17] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:17] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:37:17] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:37:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:37:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:37:27] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:37:27] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:37:37] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:37:37] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:37:37] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:37] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:37:37] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:37:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:37:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 13:37:47] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:37:47] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:37:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:37:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:37:57] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:37:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:37:57] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:38:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:38:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:38:07] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:07] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:38:07] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.043s]
+[2025-11-24 13:38:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:38:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:38:08] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:38:08] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 13:38:09] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.048s]
+[2025-11-24 13:38:09] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:38:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:38:11] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:38:14] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:38:14] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:38:17] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:38:17] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:38:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 13:38:18] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:38:18] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:38:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:38:19] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:38:19] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.043s]
+[2025-11-24 13:38:19] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:38:23] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.055s]
+[2025-11-24 13:38:23] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.045s]
+[2025-11-24 13:38:28] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.039s]
+[2025-11-24 13:38:28] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:38:28] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:38:28] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:38:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:38:29] [INFO] [ML] Retrieved 96 anomalies (total: 96)
+[2025-11-24 13:38:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:38:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:38:39] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:38:39] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.043s]
+[2025-11-24 13:38:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:38:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:38:49] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.042s]
+[2025-11-24 13:38:49] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:38:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:38:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:38:59] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:38:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:38:59] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.043s]
+[2025-11-24 13:39:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:39:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:39:09] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:39:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:39:09] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 13:39:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:39:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:39:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:39:19] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:39:19] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:39:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:39:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:39:29] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:39:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:39:29] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:40:02] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:40:02] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:40:02] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:02] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:02] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 13:40:04] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:04] [INFO] [ML] Retrieved 100 anomalies (total: 242)
+[2025-11-24 13:40:06] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:40:06] [INFO] [ML] Retrieved 100 anomalies (total: 148)
+[2025-11-24 13:40:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:40:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:40:08] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:40:08] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:40:16] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:40:16] [INFO] [ML] Retrieved 100 anomalies (total: 147)
+[2025-11-24 13:40:16] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:40:16] [INFO] [ML] Retrieved 100 anomalies (total: 147)
+[2025-11-24 13:40:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:40:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:40:18] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:18] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:40:22] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:40:22] [INFO] [ML] Retrieved 100 anomalies (total: 148)
+[2025-11-24 13:40:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:24] [INFO] [ML] Retrieved 0 anomalies (total: 0)
+[2025-11-24 13:40:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:40:25] [INFO] [ML] Retrieved 0 anomalies (total: 0)
+[2025-11-24 13:40:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:25] [INFO] [ML] Retrieved 0 anomalies (total: 0)
+[2025-11-24 13:40:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:40:25] [INFO] [ML] Retrieved 0 anomalies (total: 0)
+[2025-11-24 13:40:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.058s]
+[2025-11-24 13:40:25] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:40:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.046s]
+[2025-11-24 13:40:26] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:40:27] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.048s]
+[2025-11-24 13:40:27] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:40:27] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.048s]
+[2025-11-24 13:40:27] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:40:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:40:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:40:28] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:40:28] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:40:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:40:31] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:40:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:40:39] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:40:39] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:40:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:40:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:40:49] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:40:49] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 13:40:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:40:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:40:59] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:40:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:40:59] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:41:09] [WARNING] Task queue depth is 1
+[2025-11-24 13:41:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:41:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:41:09] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:41:09] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:41:09] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:41:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:41:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:41:19] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:41:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:41:19] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:41:29] [WARNING] Task queue depth is 1
+[2025-11-24 13:41:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:41:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:41:29] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:41:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:41:29] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.065s]
+[2025-11-24 13:41:39] [WARNING] Task queue depth is 1
+[2025-11-24 13:41:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:41:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 13:41:39] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:41:39] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:41:39] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 13:41:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:41:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:41:49] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:41:49] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:41:49] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 13:42:24] [WARNING] Task queue depth is 1
+[2025-11-24 13:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:42:24] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:42:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 13:42:25] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:42:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:42:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:42:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 13:42:32] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.046s]
+[2025-11-24 13:42:32] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:42:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:35] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:42:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:42:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:42:37] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:37] [INFO] [ML] Retrieved 100 anomalies (total: 242)
+[2025-11-24 13:42:45] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:45] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:42:45] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:42:45] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:42:45] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 13:42:55] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:42:55] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:42:55] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:42:55] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:42:55] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:43:05] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:43:05] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:05] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:43:05] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:43:05] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.004s]
+[2025-11-24 13:43:15] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:43:15] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:15] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:43:15] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:15] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 13:43:24] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 13:43:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 13:43:25] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:43:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:43:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 13:43:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:43:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:43:35] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:43:35] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:43:35] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 13:43:40] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.002s]
+[2025-11-24 13:43:42] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.003s]
+[2025-11-24 13:43:45] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.055s]
+[2025-11-24 13:43:45] [INFO] [BULK] Flushed 1 docs in 0.058s (total: 1, buffer: 5)
+[2025-11-24 13:43:47] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.054s]
+[2025-11-24 13:43:47] [INFO] [BULK] Flushed 1 docs in 0.056s (total: 2, buffer: 5)
+[2025-11-24 13:43:49] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.053s]
+[2025-11-24 13:43:49] [INFO] [BULK] Flushed 1 docs in 0.053s (total: 3, buffer: 5)
+[2025-11-24 13:43:51] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.054s]
+[2025-11-24 13:43:51] [INFO] [BULK] Flushed 1 docs in 0.056s (total: 4, buffer: 5)
+[2025-11-24 13:43:53] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.052s]
+[2025-11-24 13:43:53] [INFO] [BULK] Flushed 1 docs in 0.053s (total: 5, buffer: 5)
+[2025-11-24 13:43:55] [WARNING] [ANOMALY] TDS: 908.98 ppm (threshold: 500.0) - high
+[2025-11-24 13:43:55] [INFO] PUT https://localhost:9200/_bulk [status:200 duration:0.051s]
+[2025-11-24 13:43:55] [INFO] [BULK] Flushed 1 docs in 0.052s (total: 6, buffer: 5)
+[2025-11-24 13:43:55] [INFO] [ADAPT #1] Strategy: HIGH_TRAFFIC | Traffic: 33.2 req/min | Buffer: 5->9 | Interval: 0.5s->1.0s
+[2025-11-24 13:43:57] [WARNING] [ANOMALY] TDS: 728.53 ppm (threshold: 500.0) - high
+[2025-11-24 13:44:10] [WARNING] [ANOMALY] TDS: 504.49 ppm (threshold: 500.0) - medium
+[2025-11-24 13:44:22] [WARNING] [ANOMALY] TDS: 751.75 ppm (threshold: 500.0) - high
+[2025-11-24 13:44:24] [WARNING] Task queue depth is 1
+[2025-11-24 13:44:24] [WARNING] Task queue depth is 2
+[2025-11-24 13:44:24] [WARNING] Task queue depth is 3
+[2025-11-24 13:44:24] [WARNING] Task queue depth is 4
+[2025-11-24 13:44:24] [WARNING] Task queue depth is 5
+[2025-11-24 13:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 13:44:24] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:44:34] [WARNING] Task queue depth is 4
+[2025-11-24 13:44:46] [WARNING] Task queue depth is 5
+[2025-11-24 13:44:56] [WARNING] Task queue depth is 6
+[2025-11-24 13:44:56] [WARNING] Task queue depth is 7
+[2025-11-24 13:44:58] [WARNING] Task queue depth is 8
+[2025-11-24 13:45:00] [WARNING] Task queue depth is 9
+[2025-11-24 13:45:06] [WARNING] Task queue depth is 10
+[2025-11-24 13:45:07] [WARNING] Task queue depth is 11
+[2025-11-24 13:45:11] [WARNING] Task queue depth is 12
+[2025-11-24 13:45:13] [WARNING] Task queue depth is 13
+[2025-11-24 13:45:16] [WARNING] Task queue depth is 14
+[2025-11-24 13:45:17] [WARNING] Task queue depth is 15
+[2025-11-24 13:45:17] [WARNING] Task queue depth is 16
+[2025-11-24 13:45:17] [WARNING] Task queue depth is 17
+[2025-11-24 13:45:19] [WARNING] Task queue depth is 18
+[2025-11-24 13:45:19] [WARNING] Task queue depth is 19
+[2025-11-24 13:45:19] [WARNING] Task queue depth is 20
+[2025-11-24 13:45:19] [WARNING] Task queue depth is 21
+[2025-11-24 13:45:19] [WARNING] Task queue depth is 22
+[2025-11-24 13:45:23] [WARNING] Task queue depth is 23
+[2025-11-24 13:45:24] [WARNING] Task queue depth is 24
+[2025-11-24 13:45:24] [WARNING] Task queue depth is 25
+[2025-11-24 13:45:28] [WARNING] Task queue depth is 26
+[2025-11-24 13:45:28] [WARNING] Task queue depth is 27
+[2025-11-24 13:45:28] [WARNING] Task queue depth is 28
+[2025-11-24 13:45:28] [WARNING] Task queue depth is 29
+[2025-11-24 13:45:28] [WARNING] Task queue depth is 30
+[2025-11-24 13:45:29] [WARNING] Task queue depth is 31
+[2025-11-24 13:45:29] [WARNING] Task queue depth is 32
+[2025-11-24 13:45:34] [WARNING] Task queue depth is 33
+[2025-11-24 13:45:34] [WARNING] Task queue depth is 34
+[2025-11-24 13:45:34] [WARNING] Task queue depth is 35
+[2025-11-24 13:45:34] [WARNING] Task queue depth is 36
+[2025-11-24 13:45:35] [WARNING] Task queue depth is 37
+[2025-11-24 13:45:38] [WARNING] Task queue depth is 38
+[2025-11-24 13:45:38] [WARNING] Task queue depth is 39
+[2025-11-24 13:45:38] [WARNING] Task queue depth is 40
+[2025-11-24 13:45:39] [WARNING] Task queue depth is 41
+[2025-11-24 13:45:39] [WARNING] Task queue depth is 42
+[2025-11-24 13:45:44] [WARNING] Task queue depth is 43
+[2025-11-24 13:45:44] [WARNING] Task queue depth is 44
+[2025-11-24 13:45:47] [WARNING] Task queue depth is 45
+[2025-11-24 13:45:48] [WARNING] Task queue depth is 46
+[2025-11-24 13:45:48] [WARNING] Task queue depth is 47
+[2025-11-24 13:45:48] [WARNING] Task queue depth is 48
+[2025-11-24 13:45:49] [WARNING] Task queue depth is 49
+[2025-11-24 13:45:49] [WARNING] Task queue depth is 50
+[2025-11-24 13:45:54] [WARNING] Task queue depth is 51
+[2025-11-24 13:45:54] [WARNING] Task queue depth is 52
+[2025-11-24 13:45:58] [WARNING] Task queue depth is 53
+[2025-11-24 13:45:58] [WARNING] Task queue depth is 54
+[2025-11-24 13:45:58] [WARNING] Task queue depth is 55
+[2025-11-24 13:45:59] [WARNING] Task queue depth is 56
+[2025-11-24 13:45:59] [WARNING] Task queue depth is 57
+[2025-11-24 13:46:00] [WARNING] Task queue depth is 58
+[2025-11-24 13:46:04] [WARNING] Task queue depth is 59
+[2025-11-24 13:46:04] [WARNING] Task queue depth is 60
+[2025-11-24 13:46:04] [WARNING] Task queue depth is 61
+[2025-11-24 13:46:08] [WARNING] Task queue depth is 62
+[2025-11-24 13:46:08] [WARNING] Task queue depth is 63
+[2025-11-24 13:46:08] [WARNING] Task queue depth is 64
+[2025-11-24 13:46:09] [WARNING] Task queue depth is 65
+[2025-11-24 13:46:09] [WARNING] Task queue depth is 66
+[2025-11-24 13:46:12] [WARNING] Task queue depth is 67
+[2025-11-24 13:46:14] [WARNING] Task queue depth is 68
+[2025-11-24 13:46:14] [WARNING] Task queue depth is 69
+[2025-11-24 13:46:18] [WARNING] Task queue depth is 70
+[2025-11-24 13:46:18] [WARNING] Task queue depth is 71
+[2025-11-24 13:46:18] [WARNING] Task queue depth is 72
+[2025-11-24 13:46:24] [WARNING] Task queue depth is 73
+[2025-11-24 13:46:28] [WARNING] Task queue depth is 74
+[2025-11-24 13:46:28] [WARNING] Task queue depth is 75
+[2025-11-24 13:46:28] [WARNING] Task queue depth is 76
+[2025-11-24 13:46:29] [WARNING] Task queue depth is 77
+[2025-11-24 13:46:29] [WARNING] Task queue depth is 78
+[2025-11-24 13:46:29] [WARNING] Task queue depth is 79
+[2025-11-24 13:46:29] [WARNING] Task queue depth is 80
+[2025-11-24 13:46:36] [WARNING] Task queue depth is 81
+[2025-11-24 13:46:38] [WARNING] Task queue depth is 82
+[2025-11-24 13:46:38] [WARNING] Task queue depth is 83
+[2025-11-24 13:46:48] [WARNING] Task queue depth is 84
+[2025-11-24 13:46:49] [WARNING] Task queue depth is 85
+[2025-11-24 13:46:49] [WARNING] Task queue depth is 86
+[2025-11-24 13:46:49] [WARNING] Task queue depth is 87
+[2025-11-24 13:46:59] [WARNING] Task queue depth is 88
+[2025-11-24 13:46:59] [WARNING] Task queue depth is 89
+[2025-11-24 13:46:59] [WARNING] Task queue depth is 90
+[2025-11-24 13:47:01] [WARNING] Task queue depth is 91
+[2025-11-24 13:47:01] [WARNING] Task queue depth is 92
+[2025-11-24 13:47:01] [WARNING] Task queue depth is 93
+[2025-11-24 13:47:05] [WARNING] total open connections reached the connection limit, no longer accepting new connections
+[2025-11-24 13:47:05] [WARNING] Task queue depth is 94
+[2025-11-24 13:47:21] [INFO] [SHUTDOWN] Graceful shutdown initiated...
+[2025-11-24 13:48:02] [INFO] ======================================================================
+[2025-11-24 13:48:02] [INFO] AQUAGUARD MIDDLEWARE SERVER v6.0
+[2025-11-24 13:48:02] [INFO] ======================================================================
+[2025-11-24 13:48:02] [INFO] [INIT] Connecting to Elasticsearch: https://localhost:9200
+[2025-11-24 13:48:02] [INFO] [INIT] Using CA certificate: http_ca.crt
+[2025-11-24 13:48:02] [INFO] HEAD https://localhost:9200/ [status:200 duration:0.040s]
+[2025-11-24 13:48:02] [INFO] HEAD https://localhost:9200/depot_air_qc_data [status:200 duration:0.003s]
+[2025-11-24 13:48:02] [INFO] POST https://localhost:9200/depot_air_qc_data/_count [status:200 duration:0.004s]
+[2025-11-24 13:48:02] [INFO] [SUCCESS] Connected to Elasticsearch
+[2025-11-24 13:48:02] [INFO] [INFO] Index 'depot_air_qc_data' has 757 documents
+[2025-11-24 13:48:02] [INFO] [INIT] CSV Exporter enabled
+[2025-11-24 13:48:02] [INFO] [INFO] Reports will be saved to: reports
+[2025-11-24 13:48:02] [INFO] [INIT] Adaptive Bulk Buffer Manager started
+[2025-11-24 13:48:02] [INFO] [CONFIG] Buffer range: 5-100 docs
+[2025-11-24 13:48:02] [INFO] [CONFIG] Interval range: 0.5-5.0s
+[2025-11-24 13:48:02] [INFO] [INIT] Telegram Anomaly Notifier initialized
+[2025-11-24 13:48:03] [INFO] ======================================================================
+[2025-11-24 13:48:03] [INFO] [START] Server starting on 0.0.0.0:5000
+[2025-11-24 13:48:03] [INFO] ======================================================================
+[2025-11-24 13:48:03] [INFO] Serving on http://0.0.0.0:5000
+[2025-11-24 13:48:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.016s]
+[2025-11-24 13:48:10] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:48:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:48:10] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:48:12] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.045s]
+[2025-11-24 13:48:12] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 13:48:13] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:48:13] [INFO] [ML] Retrieved 100 anomalies (total: 242)
+[2025-11-24 13:48:15] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:48:15] [INFO] [ML] Retrieved 100 anomalies (total: 242)
+[2025-11-24 13:48:16] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:48:16] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:48:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:48:20] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:48:20] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:48:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:48:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:48:31] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:48:31] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:48:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:48:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:48:41] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:48:41] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 13:48:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:48:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:48:51] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:48:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:48:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:49:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:49:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:49:01] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:49:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:49:01] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:49:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:49:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:49:11] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:49:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:49:11] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.043s]
+[2025-11-24 13:49:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:49:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:49:21] [ERROR] [ML ERROR] Failed to get summary: type NoneType doesn't define __round__ method
+[2025-11-24 13:49:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:49:21] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 13:50:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:50:21] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:50:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 13:50:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:50:21] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:50:22] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:50:22] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:50:22] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:50:22] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:50:22] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:50:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:50:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:50:51] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:50:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:50:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:50:57] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 13:50:57] [INFO] [ML] Retrieved 100 anomalies (total: 271)
+[2025-11-24 13:50:59] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:50:59] [INFO] [ML] Retrieved 100 anomalies (total: 271)
+[2025-11-24 13:51:00] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:51:00] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 13:51:00] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:00] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:00] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:51:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:51:01] [INFO] [ML] Retrieved 100 anomalies (total: 221)
+[2025-11-24 13:51:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:51:01] [INFO] [ML] Retrieved 100 anomalies (total: 221)
+[2025-11-24 13:51:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:03] [INFO] [ML] Retrieved 100 anomalies (total: 562)
+[2025-11-24 13:51:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:03] [INFO] [ML] Retrieved 100 anomalies (total: 562)
+[2025-11-24 13:51:08] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:08] [INFO] [ML] Retrieved 3 anomalies (total: 3)
+[2025-11-24 13:51:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 13:51:10] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:10] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:51:10] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:51:13] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:13] [INFO] [ML] Retrieved 1 anomalies (total: 1)
+[2025-11-24 13:51:17] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:17] [INFO] [ML] Retrieved 100 anomalies (total: 174)
+[2025-11-24 13:51:18] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:18] [INFO] [ML] Retrieved 100 anomalies (total: 174)
+[2025-11-24 13:51:19] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:51:19] [INFO] [ML] Retrieved 100 anomalies (total: 177)
+[2025-11-24 13:51:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:20] [INFO] [ML] Retrieved 100 anomalies (total: 177)
+[2025-11-24 13:51:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 13:51:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:20] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:20] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:20] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:51:22] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:22] [INFO] [ML] Retrieved 2 anomalies (total: 2)
+[2025-11-24 13:51:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:30] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:30] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:51:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:51:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:40] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:51:40] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:51:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:51:51] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:51:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:51:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 13:52:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:52:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 13:52:01] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:52:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:52:01] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:52:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:52:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:52:11] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:52:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.043s]
+[2025-11-24 13:52:11] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.044s]
+[2025-11-24 13:52:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 13:52:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 13:52:21] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:52:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:52:21] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:52:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 13:52:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:52:31] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:52:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:52:31] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 13:52:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:52:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 13:52:41] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 13:52:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.044s]
+[2025-11-24 13:52:41] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 14:33:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 14:33:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.071s]
+[2025-11-24 14:33:54] [INFO] [ML] Summary generated: 270 anomalies in last 24h
+[2025-11-24 14:33:54] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 14:33:54] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 14:34:04] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.069s]
+[2025-11-24 14:34:04] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:34:04] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 14:34:04] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 14:34:04] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.057s]
+[2025-11-24 14:34:14] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.075s]
+[2025-11-24 14:34:14] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.142s]
+[2025-11-24 14:34:15] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.087s]
+[2025-11-24 14:34:15] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:34:15] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 14:34:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.010s]
+[2025-11-24 14:34:25] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:34:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 14:34:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 14:34:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 14:35:29] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.113s]
+[2025-11-24 14:35:29] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:36:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.022s]
+[2025-11-24 14:36:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:36:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 14:36:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:36:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.060s]
+[2025-11-24 14:37:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.065s]
+[2025-11-24 14:37:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.085s]
+[2025-11-24 14:37:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:37:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:37:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 14:38:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 14:38:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.067s]
+[2025-11-24 14:38:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:38:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:38:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 14:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.070s]
+[2025-11-24 14:41:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 14:41:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.052s]
+[2025-11-24 14:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:41:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:41:34] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 14:41:34] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.067s]
+[2025-11-24 14:41:34] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:41:34] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:41:34] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 14:43:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 14:43:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.072s]
+[2025-11-24 14:43:47] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:43:47] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 14:43:47] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.046s]
+[2025-11-24 14:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 14:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.070s]
+[2025-11-24 14:44:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:44:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 14:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.061s]
+[2025-11-24 14:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.072s]
+[2025-11-24 14:45:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 14:45:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 14:46:25] [WARNING] Task queue depth is 1
+[2025-11-24 14:46:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.063s]
+[2025-11-24 14:46:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.077s]
+[2025-11-24 14:46:25] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:46:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:46:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 14:46:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 14:46:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:46:30] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:46:30] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 14:46:31] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.059s]
+[2025-11-24 14:46:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:46:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 14:46:40] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:46:40] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 14:46:41] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 14:46:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.066s]
+[2025-11-24 14:46:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.112s]
+[2025-11-24 14:46:51] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:46:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 14:46:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.041s]
+[2025-11-24 14:47:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:47:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 14:47:01] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:47:01] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 14:47:01] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.061s]
+[2025-11-24 14:47:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 14:47:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.083s]
+[2025-11-24 14:47:11] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:47:11] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 14:47:11] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.066s]
+[2025-11-24 14:47:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:47:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:47:21] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:47:21] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:47:21] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 14:47:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 14:47:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 14:47:31] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:47:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 14:47:31] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 14:47:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 14:47:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 14:47:41] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:47:41] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 14:47:41] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 14:48:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 14:48:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 14:48:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 14:48:27] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:48:27] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 14:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 14:49:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 14:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:49:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:49:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 14:50:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:50:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 14:50:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 14:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 14:50:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 14:51:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.074s]
+[2025-11-24 14:51:25] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:51:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.086s]
+[2025-11-24 14:51:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 14:51:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 14:53:28] [WARNING] Task queue depth is 1
+[2025-11-24 14:53:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 14:53:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.072s]
+[2025-11-24 14:53:28] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:53:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 14:53:29] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 14:56:25] [WARNING] Task queue depth is 1
+[2025-11-24 14:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.061s]
+[2025-11-24 14:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.076s]
+[2025-11-24 14:56:25] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 14:56:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.062s]
+[2025-11-24 14:57:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 14:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 14:57:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 14:57:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 14:58:24] [WARNING] Task queue depth is 1
+[2025-11-24 14:58:24] [WARNING] Task queue depth is 2
+[2025-11-24 14:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.079s]
+[2025-11-24 14:58:24] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 14:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 14:58:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.059s]
+[2025-11-24 14:59:25] [WARNING] Task queue depth is 1
+[2025-11-24 14:59:25] [WARNING] Task queue depth is 1
+[2025-11-24 14:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 14:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.066s]
+[2025-11-24 14:59:25] [INFO] [ML] Summary generated: 273 anomalies in last 24h
+[2025-11-24 14:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 14:59:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.057s]
+[2025-11-24 15:00:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:00:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:00:24] [INFO] [ML] Summary generated: 269 anomalies in last 24h
+[2025-11-24 15:00:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:00:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:01:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 15:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:01:24] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 15:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.068s]
+[2025-11-24 15:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:01:50] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.013s]
+[2025-11-24 15:01:50] [INFO] [ML] Summary generated: 271 anomalies in last 24h
+[2025-11-24 15:01:50] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:01:50] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:01:50] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:01:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:01:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.065s]
+[2025-11-24 15:01:51] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:01:51] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:01:51] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.058s]
+[2025-11-24 15:01:53] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp [status:200 duration:0.052s]
+[2025-11-24 15:01:53] [INFO] [QUERY] Historical: 50 documents
+[2025-11-24 15:03:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:03:03] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:03:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:03:03] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:03:03] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 15:03:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:03:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:03:24] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:03:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:03:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.052s]
+[2025-11-24 15:04:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.063s]
+[2025-11-24 15:04:25] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:04:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:04:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:04:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.058s]
+[2025-11-24 15:05:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:05:25] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:05:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:05:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:05:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.067s]
+[2025-11-24 15:06:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:06:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:06:24] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:06:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:06:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 15:07:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:07:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:07:24] [INFO] [ML] Summary generated: 275 anomalies in last 24h
+[2025-11-24 15:07:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:07:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.059s]
+[2025-11-24 15:08:24] [WARNING] Task queue depth is 1
+[2025-11-24 15:08:24] [WARNING] Task queue depth is 1
+[2025-11-24 15:08:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.072s]
+[2025-11-24 15:08:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.091s]
+[2025-11-24 15:08:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:08:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 15:08:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:09:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:09:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:09:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:09:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:09:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 15:10:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 15:10:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:10:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:10:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:10:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 15:11:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:11:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:11:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:11:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:11:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:12:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:12:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:12:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:12:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:12:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:13:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.061s]
+[2025-11-24 15:13:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:13:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:13:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:13:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 15:14:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 15:14:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:14:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:14:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:14:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 15:15:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:15:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.069s]
+[2025-11-24 15:15:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:15:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:15:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:16:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:16:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:16:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:16:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:16:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 15:17:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:17:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:17:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:17:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:17:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 15:18:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.057s]
+[2025-11-24 15:18:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:18:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:18:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:18:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.051s]
+[2025-11-24 15:19:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:19:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:19:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 15:19:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:19:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:20:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:20:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:20:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 15:20:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.067s]
+[2025-11-24 15:20:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:21:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:21:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:21:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:21:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:21:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 15:27:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:27:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:27:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:27:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:27:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:28:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.061s]
+[2025-11-24 15:28:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.080s]
+[2025-11-24 15:28:31] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.085s]
+[2025-11-24 15:28:31] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:28:31] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:29:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:29:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:29:27] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:29:27] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:29:27] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:30:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:30:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:30:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:30:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:30:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:31:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:31:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:31:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:31:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:31:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:32:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:32:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:32:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:32:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:32:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.066s]
+[2025-11-24 15:33:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.045s]
+[2025-11-24 15:33:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:33:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:33:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:33:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:34:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:34:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:34:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:34:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:34:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 15:35:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:35:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.067s]
+[2025-11-24 15:35:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:35:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:35:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:36:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:36:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.065s]
+[2025-11-24 15:36:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:36:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:36:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:37:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.069s]
+[2025-11-24 15:37:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.069s]
+[2025-11-24 15:37:26] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:37:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:37:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 15:38:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.061s]
+[2025-11-24 15:38:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.069s]
+[2025-11-24 15:38:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:38:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:38:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.058s]
+[2025-11-24 15:39:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:39:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:39:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.072s]
+[2025-11-24 15:39:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:39:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:40:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:40:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:40:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:40:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:40:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:41:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:41:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:41:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.059s]
+[2025-11-24 15:42:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:42:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:42:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:43:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:43:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:43:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 15:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:44:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:44:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:44:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:45:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:45:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:45:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:46:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:46:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:46:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:46:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:46:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.045s]
+[2025-11-24 15:47:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:47:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:47:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:47:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:47:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.053s]
+[2025-11-24 15:48:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.058s]
+[2025-11-24 15:48:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.071s]
+[2025-11-24 15:48:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:48:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:48:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:49:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:49:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:49:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.048s]
+[2025-11-24 15:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.103s]
+[2025-11-24 15:50:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:50:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:50:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.052s]
+[2025-11-24 15:51:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 15:51:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:51:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:51:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:51:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.052s]
+[2025-11-24 15:52:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.162s]
+[2025-11-24 15:52:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.188s]
+[2025-11-24 15:52:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:52:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.007s]
+[2025-11-24 15:52:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.087s]
+[2025-11-24 15:53:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:53:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.064s]
+[2025-11-24 15:53:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:53:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 15:53:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.055s]
+[2025-11-24 15:54:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:54:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.066s]
+[2025-11-24 15:54:26] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:54:26] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:54:26] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.052s]
+[2025-11-24 15:55:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.060s]
+[2025-11-24 15:55:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.062s]
+[2025-11-24 15:55:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:55:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:55:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.047s]
+[2025-11-24 15:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.049s]
+[2025-11-24 15:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:56:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:56:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:56:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 15:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 15:57:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:57:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.047s]
+[2025-11-24 15:57:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.056s]
+[2025-11-24 15:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 15:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.052s]
+[2025-11-24 15:58:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:58:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 15:58:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 15:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 15:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 15:59:25] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 15:59:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.056s]
+[2025-11-24 15:59:25] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.049s]
+[2025-11-24 16:00:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 16:00:25] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.054s]
+[2025-11-24 16:00:28] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.055s]
+[2025-11-24 16:00:28] [INFO] [ML] Summary generated: 272 anomalies in last 24h
+[2025-11-24 16:00:29] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.050s]
+[2025-11-24 16:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.050s]
+[2025-11-24 16:01:24] [INFO] [ML] Summary generated: 276 anomalies in last 24h
+[2025-11-24 16:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.051s]
+[2025-11-24 16:01:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 16:01:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.051s]
+[2025-11-24 16:02:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.048s]
+[2025-11-24 16:02:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.053s]
+[2025-11-24 16:02:24] [INFO] [ML] Summary generated: 278 anomalies in last 24h
+[2025-11-24 16:02:24] [INFO] POST https://localhost:9200/.ml-anomalies-*/_search [status:200 duration:0.046s]
+[2025-11-24 16:02:24] [INFO] POST https://localhost:9200/depot_air_qc_data/_search?_source_includes=tds_ppm,kekeruhan_ntu,suhu_celsius,%40timestamp,depot_id [status:200 duration:0.054s]
+[2025-11-24 16:07:09] [INFO] [SHUTDOWN] Graceful shutdown initiated...
+[2025-11-24 16:07:09] [INFO] [SHUTDOWN] Complete

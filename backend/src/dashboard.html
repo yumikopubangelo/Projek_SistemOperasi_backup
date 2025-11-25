@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGuard Dashboard Final</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --primary-bg: #0b1120;
+            --card-bg: #151f32;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --blue-brand: #63b3ed;
+            --pink-accent: #d53f8c;
+            --orange-warm: #ed8936;
+            --red-danger: #f5365c;
+            --green-success: #2dce89;
+            --border-color: rgba(255,255,255,0.08);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--primary-bg); padding: 20px; color: var(--text-main); }
+        .container { max-width: 1400px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { color: var(--text-main); font-size: 28px; font-weight: 700; display: flex; justify-content: center; align-items: center; gap: 10px; }
+
+        .nav-tabs { display: flex; border-bottom: 1px solid #2d3748; margin-bottom: 25px; overflow-x: auto; }
+        .nav-item { padding: 12px 24px; cursor: pointer; color: var(--text-muted); font-weight: 500; font-size: 14px; position: relative; transition: all 0.3s; white-space: nowrap; }
+        .nav-item:hover { color: var(--text-main); }
+        .nav-item.active { color: var(--blue-brand); }
+        .nav-item.active::after { content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 2px; background-color: var(--blue-brand); box-shadow: 0 0 8px var(--blue-brand); }
+
+        .page-section { display: none; animation: fadeIn 0.4s ease; }
+        .page-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .card { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid var(--border-color); text-align: center; color: white; display: flex; flex-direction: column; justify-content: center; }
+
+        .status-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .metrics-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .sensor-top-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px; }
+        .charts-grid-split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+        .chart-row-full { margin-bottom: 20px; }
+
+        .metric-label { color: var(--text-muted); font-size: 12px; text-transform: uppercase; font-weight: 600; margin-bottom: 10px; }
+        .metric-value { font-size: 28px; font-weight: 700; }
+        .metric-subtitle { font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+        .val-blue { color: var(--blue-brand); }
+        .val-pink { color: var(--pink-accent); }
+        .val-orange { color: var(--orange-warm); }
+        .val-green { color: var(--green-success); }
+
+        .chart-container {
+            background: var(--card-bg); padding: 20px; border-radius: 12px;
+            box-shadow: var(--shadow); position: relative; width: 100%;
+            border: 1px solid var(--border-color); display: flex; flex-direction: column;
+        }
+        .h-medium { height: 320px; }
+        .h-small { height: 280px; }
+        .h-large { height: 400px; }
+        .h-xlarge { height: 500px; }
+
+        .chart-header { margin-bottom: 15px; font-weight: 600; color: var(--text-main); display: flex; justify-content: space-between; align-items: center; }
+        .chart-badge { font-size: 11px; padding: 4px 10px; border-radius: 20px; font-weight: 600; letter-spacing: 0.5px; }
+        .badge-tds { background: rgba(99, 179, 237, 0.15); color: var(--blue-brand); border: 1px solid rgba(99, 179, 237, 0.3); }
+        .badge-turb { background: rgba(213, 63, 140, 0.15); color: var(--pink-accent); border: 1px solid rgba(213, 63, 140, 0.3); }
+        .badge-temp { background: rgba(237, 137, 54, 0.15); color: var(--orange-warm); border: 1px solid rgba(237, 137, 54, 0.3); }
+
+        .controls-row { display: flex; gap: 15px; margin-bottom: 20px; align-items: center; flex-wrap: wrap; }
+        .control-input { background: var(--card-bg); color: var(--text-main); border: 1px solid var(--border-color); padding: 8px 15px; border-radius: 8px; outline: none; cursor: pointer; font-size: 14px; }
+        .btn-refresh { background: transparent; color: var(--blue-brand); border: 1px solid var(--blue-brand); padding: 8px 20px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: 0.3s; font-weight: 500; }
+        .btn-refresh:hover { background: var(--blue-brand); color: white; }
+
+        .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border-color); }
+        .ml-table { width: 100%; border-collapse: collapse; background: var(--card-bg); text-align: left; }
+        .ml-table th, .ml-table td { padding: 16px 20px; border-bottom: 1px solid var(--border-color); white-space: nowrap; }
+        .ml-table th { background-color: rgba(255, 255, 255, 0.03); color: var(--text-muted); font-size: 12px; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+        .ml-table td { color: var(--text-main); font-size: 14px; }
+        .ml-table tr:hover { background-color: rgba(255, 255, 255, 0.02); }
+        
+        .score-badge { padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 12px; }
+        .score-low { background: rgba(45, 206, 137, 0.2); color: #2dce89; }
+        .score-medium { background: rgba(255, 193, 7, 0.2); color: #ffc107; }
+        .score-high { background: rgba(253, 126, 20, 0.2); color: #fd7e14; }
+        .score-critical { background: rgba(245, 54, 92, 0.2); color: var(--red-danger); }
+        
+        .table-footer-info { margin-top: 20px; text-align: center; color: var(--text-muted); font-size: 14px; }
+
+        .bg-warning { background: linear-gradient(87deg, #e03155 0, #e05631 100%); }
+        .bg-success { background: linear-gradient(87deg, #26af74 0, #26afac 100%); }
+        .bg-pending { background: linear-gradient(87deg, #667eea 0, #764ba2 100%); }
+        .bg-info { background: linear-gradient(87deg, #4299e1 0, #667eea 100%); }
+        .status-title { font-weight: 700; font-size: 16px; margin-bottom: 5px; }
+
+        .toast-container { position: fixed; top: 20px; right: 20px; z-index: 9999; }
+        .toast-box {
+            background: var(--card-bg); color: white; padding: 15px 25px; border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5); border-left: 4px solid var(--blue-brand);
+            display: flex; align-items: center; gap: 12px;
+            transform: translateX(150%); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            margin-bottom: 10px; min-width: 280px;
+        }
+        .toast-box.show { transform: translateX(0); }
+        .toast-icon { font-size: 18px; color: var(--blue-brand); }
+        .footer { margin-top: 30px; text-align: center; font-size: 12px; color: var(--text-muted); border-top: 1px solid #2d3748; padding-top: 20px; }
+
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+        .spinner { display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.1); border-top-color: var(--blue-brand); border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .prediction-card { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 20px; }
+        .prediction-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-main); }
+        .prediction-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .prediction-item { text-align: center; }
+        .prediction-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 5px; }
+        .prediction-value { font-size: 24px; font-weight: 700; }
+
+        @media (max-width: 768px) {
+            .status-row, .metrics-row, .sensor-top-metrics, .charts-grid-split { grid-template-columns: 1fr; }
+            .nav-tabs { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toast-container">
+        <div class="toast-box" id="toast">
+            <i class="fas fa-info-circle toast-icon"></i>
+            <span id="toastMsg">Notification</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-water" style="color: var(--blue-brand);"></i> AquaGuard Dashboard</h1>
+        </header>
+
+        <div class="nav-tabs">
+            <div class="nav-item active" onclick="switchPage('overview', this)">Overview</div>
+            <div class="nav-item" onclick="switchPage('sensor', this)">Sensor Data</div>
+            <div class="nav-item" onclick="switchPage('ml', this)">ML Anomalies</div>
+            <div class="nav-item" onclick="switchPage('statistics', this)">Statistics</div>
+            <div class="nav-item" onclick="switchPage('prediction', this)">Predictions</div>
+            <div class="nav-item" onclick="switchPage('system', this)">System</div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div id="overview" class="page-section active">
+            <div class="status-row">
+                <div class="card bg-pending" id="mlStatusCard">
+                    <div class="status-title"><i class="fas fa-spinner fa-spin"></i> ML Status: Loading...</div>
+                    <div>Checking ML engine...</div>
+                </div>
+                <div class="card bg-success" id="sensorStatusCard">
+                    <div class="status-title"><i class="fas fa-check-circle"></i> Sensor Online</div>
+                    <div>Last: <span id="sensorLastTime">--:--:--</span></div>
+                </div>
+                <div class="card bg-info" id="systemStatusCard">
+                    <div class="status-title"><i class="fas fa-server"></i> System Health</div>
+                    <div id="systemHealth">Checking...</div>
+                </div>
+            </div>
+            <div class="metrics-row">
+                <div class="card"><div class="metric-label">Total Anomalies</div><div class="metric-value val-blue" id="totalAnomalies">-</div></div>
+                <div class="card"><div class="metric-label">Critical</div><div class="metric-value val-pink" id="criticalAnomalies">-</div></div>
+                <div class="card"><div class="metric-label">Avg ML Score</div><div class="metric-value val-orange" id="avgScore">-</div></div>
+                <div class="card"><div class="metric-label">Latest TDS</div><div class="metric-value val-green" id="latestTDS">-</div></div>
+                <div class="card"><div class="metric-label">Buffer Size</div><div class="metric-value val-blue" id="bufferSize">-</div></div>
+            </div>
+            <div class="chart-container h-medium">
+                <div class="chart-header">Anomaly Timeline (24h)</div>
+                <canvas id="overviewChart"></canvas>
+            </div>
+        </div>
+
+        <!-- SENSOR -->
+        <div id="sensor" class="page-section">
+            <div class="controls-row">
+                <select class="control-input" id="sensorSize">
+                    <option value="100">100 Data Terakhir</option>
+                    <option value="50">50 Data Terakhir</option>
+                    <option value="25">25 Data Terakhir</option>
+                </select>
+                <button class="btn-refresh" onclick="refreshSensor()"><i class="fas fa-sync-alt"></i> Refresh</button>
+            </div>
+
+            <div class="sensor-top-metrics">
+                <div class="card">
+                    <div class="metric-label">TDS (PPM)</div>
+                    <div class="metric-value val-blue" id="currentTDS">-</div>
+                    <div class="metric-subtitle">Total Dissolved Solids</div>
+                </div>
+                <div class="card">
+                    <div class="metric-label">Turbidity (NTU)</div>
+                    <div class="metric-value val-pink" id="currentTurbidity">-</div>
+                    <div class="metric-subtitle">Kekeruhan Air</div>
+                </div>
+                <div class="card">
+                    <div class="metric-label">Temperature (°C)</div>
+                    <div class="metric-value val-orange" id="currentTemp">-</div>
+                    <div class="metric-subtitle">Suhu Air</div>
+                </div>
+            </div>
+
+            <div class="charts-grid-split">
+                <div class="chart-container h-medium">
+                    <div class="chart-header">
+                        <span>TDS Live</span>
+                        <span class="chart-badge badge-tds">PPM</span>
+                    </div>
+                    <canvas id="chartTDS"></canvas>
+                </div>
+                <div class="chart-container h-medium">
+                    <div class="chart-header">
+                        <span>Turbidity Live</span>
+                        <span class="chart-badge badge-turb">NTU</span>
+                    </div>
+                    <canvas id="chartTurb"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container h-small chart-row-full">
+                <div class="chart-header">
+                    <span>Temperature Live</span>
+                    <span class="chart-badge badge-temp">°C / Celsius</span>
+                </div>
+                <canvas id="chartTemp"></canvas>
+            </div>
+        </div>
+
+        <!-- ML ANOMALIES -->
+        <div id="ml" class="page-section">
+            
+            <div class="controls-row">
+                <select class="control-input" id="mlTimeRange">
+                    <option value="1">Last 1 Hour</option>
+                    <option value="6">Last 6 Hours</option>
+                    <option value="24" selected>Last 24 Hours</option>
+                    <option value="168">Last 7 Days</option>
+                </select>
+                
+                <select class="control-input" id="mlMinScore">
+                    <option value="0">All Scores</option>
+                    <option value="25">Score ≥ 25</option>
+                    <option value="50" selected>Score ≥ 50</option>
+                    <option value="75">Score ≥ 75 (Critical)</option>
+                </select>
+
+                <select class="control-input" id="mlJobFilter">
+                    <option value="">All Jobs</option>
+                </select>
+
+                <button class="btn-refresh" onclick="refreshMLAnomalies()">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+
+            <div class="table-responsive" id="mlTableContainer">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading ML anomalies...</p>
+                </div>
+            </div>
+
+            <div class="table-footer-info" id="mlTableFooter"></div>
+
+        </div>
+
+        <!-- STATISTICS -->
+        <div id="statistics" class="page-section">
+            
+            <div class="charts-grid-split">
+                
+                <div class="chart-container h-large">
+                    <div class="chart-header">Severity Distribution</div>
+                    <div style="flex-grow: 1; position: relative;">
+                        <canvas id="statSeverity"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container h-large">
+                    <div class="chart-header">Anomalies by Job</div>
+                    <div style="flex-grow: 1; position: relative;">
+                        <canvas id="statJob"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PREDICTIONS -->
+        <div id="prediction" class="page-section">
+            
+            <div class="controls-row">
+                <select class="control-input" id="predictionHoursBack">
+                    <option value="24">Data 24 Jam</option>
+                    <option value="48" selected>Data 48 Jam</option>
+                    <option value="168">Data 7 Hari</option>
+                </select>
+                <button class="btn-refresh" onclick="refreshPredictions()">
+                    <i class="fas fa-sync-alt"></i> Refresh Predictions
+                </button>
+            </div>
+
+            <div class="prediction-card" id="filterRULCard">
+                <div class="prediction-title"><i class="fas fa-filter"></i> Filter Remaining Useful Life (RUL)</div>
+                <div class="prediction-content">
+                    <div class="prediction-item">
+                        <div class="prediction-label">Days Remaining</div>
+                        <div class="prediction-value val-blue" id="rulDays">-</div>
+                    </div>
+                    <div class="prediction-item">
+                        <div class="prediction-label">Current TDS</div>
+                        <div class="prediction-value val-orange" id="rulCurrentTDS">-</div>
+                    </div>
+                    <div class="prediction-item">
+                        <div class="prediction-label">Critical TDS</div>
+                        <div class="prediction-value val-pink" id="rulCriticalTDS">700</div>
+                    </div>
+                    <div class="prediction-item">
+                        <div class="prediction-label">TDS Rate</div>
+                        <div class="prediction-value val-green" id="rulTDSRate">-</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prediction-card" id="thresholdCard">
+                <div class="prediction-title"><i class="fas fa-chart-line"></i> Time to Threshold Predictions</div>
+                <div class="prediction-content">
+                    <div class="prediction-item">
+                        <div class="prediction-label">TDS to 700 PPM</div>
+                        <div class="prediction-value val-blue" id="tdsThresholdHours">-</div>
+                        <div class="prediction-label">hours</div>
+                    </div>
+                    <div class="prediction-item">
+                        <div class="prediction-label">Turbidity to 10 NTU</div>
+                        <div class="prediction-value val-pink" id="turbThresholdHours">-</div>
+                        <div class="prediction-label">hours</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container h-xlarge">
+                <div class="chart-header">
+                    <span>TDS Forecast (Next 24 Hours)</span>
+                    <span class="chart-badge badge-tds">Linear Prediction</span>
+                </div>
+                <canvas id="forecastChart"></canvas>
+            </div>
+
+        </div>
+
+        <!-- SYSTEM -->
+        <div id="system" class="page-section">
+            
+            <div class="metrics-row">
+                <div class="card">
+                    <div class="metric-label">Elasticsearch</div>
+                    <div class="metric-value" id="esStatus">-</div>
+                </div>
+                <div class="card">
+                    <div class="metric-label">Buffer Size</div>
+                    <div class="metric-value val-blue" id="systemBufferSize">-</div>
+                </div>
+                <div class="card">
+                    <div class="metric-label">Telegram Sent</div>
+                    <div class="metric-value val-green" id="telegramSent">-</div>
+                </div>
+                <div class="card">
+                    <div class="metric-label">Telegram Failed</div>
+                    <div class="metric-value val-pink" id="telegramFailed">-</div>
+                </div>
+            </div>
+
+            <div class="prediction-card">
+                <div class="prediction-title"><i class="fas fa-info-circle"></i> System Information</div>
+                <div id="systemInfo" class="loading">Loading system info...</div>
+            </div>
+
+            <div class="prediction-card">
+                <div class="prediction-title"><i class="fas fa-chart-bar"></i> Buffer Statistics</div>
+                <div id="bufferStats" class="loading">Loading buffer stats...</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Last Update: <span id="clock">--:--:--</span> | 
+            Connection: <span id="connectionStatus">Checking...</span> | 
+            <a href="/health" target="_blank" style="color: var(--blue-brand); text-decoration: none;">Health Check</a>
+        </div>
+    </div>
+
+    <script>
+        // API Configuration
+        const API_BASE = window.location.origin;
+        const REFRESH_INTERVAL = 10000; // 10 seconds
+        
+        let charts = {};
+        let currentTab = 'overview';
+
+        // --- UTILITY FUNCTIONS ---
+        let toastTimeout;
+        function showNotification(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            toast.classList.add('show');
+            if (toastTimeout) clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+
+        function switchPage(pageId, element) {
+            document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+            element.classList.add('active');
+            currentTab = pageId;
+            
+            // Load data for specific tab
+            if (pageId === 'ml') refreshMLAnomalies();
+            else if (pageId === 'sensor') refreshSensor();
+            else if (pageId === 'statistics') refreshStatistics();
+            else if (pageId === 'prediction') refreshPredictions();
+            else if (pageId === 'system') refreshSystemInfo();
+        }
+
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID');
+        }
+
+        // --- CHART CONFIG ---
+        Chart.defaults.interaction.mode = 'index';
+        Chart.defaults.interaction.intersect = false;
+        Chart.defaults.plugins.tooltip.padding = 10;
+        Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(15, 23, 42, 0.9)';
+        Chart.defaults.plugins.tooltip.titleColor = '#ffffff';
+        Chart.defaults.plugins.tooltip.bodyColor = '#ffffff';
+        Chart.defaults.plugins.tooltip.borderColor = 'rgba(255,255,255,0.1)';
+        Chart.defaults.plugins.tooltip.borderWidth = 1;
+
+        // --- API CALLS ---
+        async function fetchHealth() {
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const data = await response.json();
+                
+                const card = document.getElementById('systemStatusCard');
+                if (data.status === 'healthy') {
+                    card.className = 'card bg-success';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-check-circle"></i> System Healthy</div>
+                        <div id="systemHealth">All systems operational</div>
+                    `;
+                } else {
+                    card.className = 'card bg-warning';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-exclamation-triangle"></i> System ${data.status}</div>
+                        <div id="systemHealth">Check system logs</div>
+                    `;
+                }
+                
+                document.getElementById('esStatus').textContent = data.elasticsearch ? 'Connected' : 'Disconnected';
+                document.getElementById('esStatus').className = data.elasticsearch ? 'metric-value val-green' : 'metric-value val-pink';
+                
+                document.getElementById('connectionStatus').textContent = 'Online';
+            } catch (error) {
+                console.error('Error fetching health:', error);
+                document.getElementById('connectionStatus').textContent = 'Offline';
+            }
+        }
+
+        async function fetchStats() {
+            try {
+                const response = await fetch(`${API_BASE}/stats`);
+                const data = await response.json();
+                
+                if (data.buffer) {
+                    document.getElementById('bufferSize').textContent = data.buffer.current_size || 0;
+                    document.getElementById('systemBufferSize').textContent = data.buffer.current_size || 0;
+                }
+                
+                if (data.telegram) {
+                    document.getElementById('telegramSent').textContent = data.telegram.total_sent || 0;
+                    document.getElementById('telegramFailed').textContent = data.telegram.total_failed || 0;
+                }
+            } catch (error) {
+                console.error('Error fetching stats:', error);
+            }
+        }
+
+        async function fetchMLStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/ml/status`);
+                const data = await response.json();
+                
+                const card = document.getElementById('mlStatusCard');
+                
+                // Build jobs status details
+                let jobsHtml = '';
+                if (data.jobs && data.jobs.length > 0) {
+                    jobsHtml = '<div style="font-size: 11px; margin-top: 8px;">';
+                    data.jobs.forEach(job => {
+                        const statusIcon = job.status === 'RUNNING' ? '✓' : 
+                                         job.status === 'ERROR' ? '✗' : '⚠';
+                        jobsHtml += `<div>${statusIcon} ${job.job_id}: ${job.status}</div>`;
+                    });
+                    jobsHtml += '</div>';
+                }
+                
+                if (data.status === 'CRITICAL') {
+                    card.className = 'card bg-warning';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-exclamation-triangle"></i> ML Status: CRITICAL</div>
+                        <div>${data.message}</div>
+                        ${jobsHtml}
+                    `;
+                } else if (data.status === 'WARNING') {
+                    card.className = 'card bg-warning';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-exclamation-circle"></i> ML Status: WARNING</div>
+                        <div>${data.message}</div>
+                        ${jobsHtml}
+                    `;
+                } else if (data.status === 'NORMAL') {
+                    card.className = 'card bg-success';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-check-circle"></i> ML Status: NORMAL</div>
+                        <div>${data.message}</div>
+                        ${jobsHtml}
+                    `;
+                } else if (data.status === 'ERROR') {
+                    card.className = 'card bg-warning';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-times-circle"></i> ML Status: ERROR</div>
+                        <div>${data.message || 'ML service unavailable'}</div>
+                        ${data.error ? `<div style="font-size: 11px; margin-top: 5px; color: rgba(255,255,255,0.7);">${data.error}</div>` : ''}
+                    `;
+                } else {
+                    card.className = 'card bg-pending';
+                    card.innerHTML = `
+                        <div class="status-title"><i class="fas fa-clock"></i> ML Status: ${data.status || 'CHECKING'}</div>
+                        <div>${data.message || 'Checking ML jobs...'}</div>
+                        ${jobsHtml}
+                    `;
+                }
+            } catch (error) {
+                console.error('Error fetching ML status:', error);
+                const card = document.getElementById('mlStatusCard');
+                card.className = 'card bg-warning';
+                card.innerHTML = `
+                    <div class="status-title"><i class="fas fa-exclamation-triangle"></i> ML Status: CONNECTION ERROR</div>
+                    <div>Cannot connect to ML service</div>
+                `;
+            }
+        }
+
+        async function fetchMLSummary() {
+            try {
+                const response = await fetch(`${API_BASE}/ml/summary?hours_back=24`);
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    document.getElementById('totalAnomalies').textContent = data.total_anomalies || 0;
+                    document.getElementById('criticalAnomalies').textContent = data.severity_breakdown?.critical || 0;
+                    
+                    if (data.jobs && data.jobs.length > 0) {
+                        const avgScore = data.jobs.reduce((sum, job) => sum + job.avg_score, 0) / data.jobs.length;
+                        document.getElementById('avgScore').textContent = avgScore.toFixed(1);
+                    }
+                    
+                    updateTimelineChart(data.timeline || []);
+                }
+            } catch (error) {
+                console.error('Error fetching ML summary:', error);
+            }
+        }
+
+        async function fetchLatestSensor() {
+            try {
+                const response = await fetch(`${API_BASE}/data/latest`);
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('latestTDS').textContent = data.tds_ppm?.toFixed(1) || '-';
+                    document.getElementById('currentTDS').textContent = data.tds_ppm?.toFixed(1) || '-';
+                    document.getElementById('currentTurbidity').textContent = data.kekeruhan_ntu?.toFixed(2) || '-';
+                    document.getElementById('currentTemp').textContent = data.suhu_celsius?.toFixed(1) || '-';
+                    
+                    const timestamp = new Date(data['@timestamp']).toLocaleTimeString('id-ID');
+                    document.getElementById('sensorLastTime').textContent = timestamp;
+                }
+            } catch (error) {
+                console.error('Error fetching latest sensor:', error);
+            }
+        }
+
+        async function refreshSensor() {
+            const icon = document.querySelector('#sensor .btn-refresh i');
+            if (icon) icon.classList.add('fa-spin');
+            
+            try {
+                const size = document.getElementById('sensorSize').value;
+                const response = await fetch(`${API_BASE}/data/historical?size=${size}`);
+                const result = await response.json();
+                
+                if (result.status === 'success' && result.data) {
+                    updateSensorCharts(result.data);
+                    showNotification("Data Sensor berhasil diperbarui!");
+                }
+            } catch (error) {
+                console.error('Error refreshing sensor data:', error);
+                showNotification("Gagal memperbarui data sensor!");
+            } finally {
+                if (icon) setTimeout(() => icon.classList.remove('fa-spin'), 500);
+            }
+        }
+
+        async function refreshMLAnomalies() {
+            const container = document.getElementById('mlTableContainer');
+            container.innerHTML = '<div class="loading"><div class="spinner"></div><p>Loading ML anomalies...</p></div>';
+            
+            try {
+                const hoursBack = document.getElementById('mlTimeRange').value;
+                const minScore = document.getElementById('mlMinScore').value;
+                const jobId = document.getElementById('mlJobFilter').value;
+                
+                const params = new URLSearchParams({
+                    hours_back: hoursBack,
+                    min_score: minScore,
+                    size: 100
+                });
+                if (jobId) params.append('job_id', jobId);
+                
+                const response = await fetch(`${API_BASE}/ml/anomalies?${params}`);
+                const data = await response.json();
+                
+                if (data.status === 'success' && data.anomalies && data.anomalies.length > 0) {
+                    let tableHTML = `
+                        <table class="ml-table">
+                            <thead>
+                                <tr>
+                                    <th>Timestamp</th>
+                                    <th>Job ID</th>
+                                    <th>Score</th>
+                                    <th>Function</th>
+                                    <th>Field</th>
+                                    <th>Typical</th>
+                                    <th>Actual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    `;
+                    
+                    data.anomalies.forEach(anomaly => {
+                        const score = anomaly.record_score;
+                        let scoreClass = 'score-low';
+                        if (score >= 75) scoreClass = 'score-critical';
+                        else if (score >= 50) scoreClass = 'score-high';
+                        else if (score >= 25) scoreClass = 'score-medium';
+                        
+                        const typical = Array.isArray(anomaly.typical) ? anomaly.typical[0] : anomaly.typical;
+                        const actual = Array.isArray(anomaly.actual) ? anomaly.actual[0] : anomaly.actual;
+                        
+                        tableHTML += `
+                            <tr>
+                                <td>${new Date(anomaly.timestamp).toLocaleString('id-ID')}</td>
+                                <td>${anomaly.job_id}</td>
+                                <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
+                                <td>${anomaly.function || '-'}</td>
+                                <td>${anomaly.field_name || '-'}</td>
+                                <td>${typeof typical === 'number' ? typical.toFixed(2) : typical}</td>
+                                <td>${typeof actual === 'number' ? actual.toFixed(2) : actual}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    tableHTML += '</tbody></table>';
+                    container.innerHTML = tableHTML;
+                    document.getElementById('mlTableFooter').textContent = `Total: ${data.total} anomalies`;
+                    
+                    updateJobFilter(data.anomalies);
+                } else {
+                    container.innerHTML = '<div class="loading"><p>No ML anomalies found</p></div>';
+                    document.getElementById('mlTableFooter').textContent = 'Total: 0 anomalies';
+                }
+            } catch (error) {
+                console.error('Error fetching ML anomalies:', error);
+                container.innerHTML = '<div class="loading"><p>Error loading anomalies</p></div>';
+            }
+        }
+
+        function updateJobFilter(anomalies) {
+            const jobFilter = document.getElementById('mlJobFilter');
+            const jobs = [...new Set(anomalies.map(a => a.job_id))];
+            const currentValue = jobFilter.value;
+            
+            let html = '<option value="">All Jobs</option>';
+            jobs.forEach(job => {
+                html += `<option value="${job}">${job}</option>`;
+            });
+            
+            jobFilter.innerHTML = html;
+            jobFilter.value = currentValue;
+        }
+
+        async function refreshStatistics() {
+            try {
+                const response = await fetch(`${API_BASE}/ml/summary?hours_back=24`);
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    updateSeverityChart(data.severity_breakdown || {});
+                    updateJobChart(data.jobs || []);
+                }
+            } catch (error) {
+                console.error('Error refreshing statistics:', error);
+            }
+        }
+
+        async function refreshPredictions() {
+            try {
+                const hoursBack = document.getElementById('predictionHoursBack').value;
+                
+                // Fetch Filter RUL
+                const rulResponse = await fetch(`${API_BASE}/prediction/filter-rul?hours_back=${hoursBack}`);
+                const rulData = await rulResponse.json();
+                
+                if (rulData.status === 'success') {
+                    document.getElementById('rulDays').textContent = rulData.days_remaining?.toFixed(1) || '-';
+                    document.getElementById('rulCurrentTDS').textContent = rulData.current_tds?.toFixed(1) || '-';
+                    document.getElementById('rulTDSRate').textContent = rulData.tds_increase_rate?.toFixed(2) + '/day' || '-';
+                }
+                
+                // Fetch prediction summary
+                const summaryResponse = await fetch(`${API_BASE}/prediction/summary?hours_back=${hoursBack}`);
+                const summaryData = await summaryResponse.json();
+                
+                if (summaryData.status === 'success') {
+                    if (summaryData.tds_threshold?.status === 'success') {
+                        document.getElementById('tdsThresholdHours').textContent = 
+                            summaryData.tds_threshold.estimated_hours?.toFixed(1) || 'N/A';
+                    }
+                    
+                    if (summaryData.turbidity_threshold?.status === 'success') {
+                        document.getElementById('turbThresholdHours').textContent = 
+                            summaryData.turbidity_threshold.estimated_hours?.toFixed(1) || 'N/A';
+                    }
+                }
+                
+                // Fetch forecast
+                const forecastResponse = await fetch(`${API_BASE}/prediction/forecast?parameter=tds_ppm&hours_ahead=24&intervals=12&hours_back=${hoursBack}`);
+                const forecastData = await forecastResponse.json();
+                
+                if (forecastData.status === 'success' && forecastData.forecast) {
+                    updateForecastChart(forecastData.forecast);
+                }
+                
+                showNotification("Predictions updated successfully!");
+            } catch (error) {
+                console.error('Error refreshing predictions:', error);
+                showNotification("Failed to update predictions!");
+            }
+        }
+
+        async function refreshSystemInfo() {
+            try {
+                const [healthResponse, statsResponse] = await Promise.all([
+                    fetch(`${API_BASE}/health`),
+                    fetch(`${API_BASE}/stats`)
+                ]);
+                
+                const healthData = await healthResponse.json();
+                const statsData = await statsResponse.json();
+                
+                // Update system info
+                let systemInfoHTML = '<div style="padding: 20px;">';
+                systemInfoHTML += `<p><strong>Status:</strong> ${healthData.status}</p>`;
+                systemInfoHTML += `<p><strong>Elasticsearch:</strong> ${healthData.elasticsearch ? 'Connected' : 'Disconnected'}</p>`;
+                systemInfoHTML += `<p><strong>Timestamp:</strong> ${new Date(healthData.timestamp).toLocaleString('id-ID')}</p>`;
+                systemInfoHTML += '</div>';
+                document.getElementById('systemInfo').innerHTML = systemInfoHTML;
+                
+                // Update buffer stats
+                let bufferStatsHTML = '<div style="padding: 20px;">';
+                if (statsData.buffer) {
+                    bufferStatsHTML += `<p><strong>Current Size:</strong> ${statsData.buffer.current_size || 0}</p>`;
+                    bufferStatsHTML += `<p><strong>Total Sent:</strong> ${statsData.buffer.total_sent || 0}</p>`;
+                    bufferStatsHTML += `<p><strong>Failed:</strong> ${statsData.buffer.failed || 0}</p>`;
+                }
+                if (statsData.telegram) {
+                    bufferStatsHTML += `<p><strong>Telegram Sent:</strong> ${statsData.telegram.total_sent || 0}</p>`;
+                    bufferStatsHTML += `<p><strong>Telegram Failed:</strong> ${statsData.telegram.total_failed || 0}</p>`;
+                }
+                bufferStatsHTML += '</div>';
+                document.getElementById('bufferStats').innerHTML = bufferStatsHTML;
+                
+            } catch (error) {
+                console.error('Error refreshing system info:', error);
+            }
+        }
+
+        // --- CHART UPDATES ---
+        function updateTimelineChart(timeline) {
+            const ctx = document.getElementById('overviewChart').getContext('2d');
+            
+            if (charts.overview) charts.overview.destroy();
+            
+            const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+            gradient.addColorStop(0, 'rgba(99, 179, 237, 0.4)');
+            gradient.addColorStop(1, 'rgba(0,0,0,0)');
+            
+            charts.overview = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: timeline.map(t => new Date(t.timestamp).toLocaleTimeString('id-ID', {hour: '2-digit', minute: '2-digit'})),
+                    datasets: [{
+                        label: 'Anomaly Count',
+                        data: timeline.map(t => t.count),
+                        borderColor: '#63b3ed',
+                        backgroundColor: gradient,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { grid: { display: false }, ticks: { color: '#94a3b8' } },
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } }
+                    }
+                }
+            });
+        }
+
+        function updateSensorCharts(data) {
+            const labels = data.map(d => new Date(d['@timestamp']).toLocaleTimeString('id-ID', {hour: '2-digit', minute: '2-digit'}));
+            
+            updateChart('chartTDS', labels, data.map(d => d.tds_ppm), '#63b3ed', 'TDS (PPM)');
+            updateChart('chartTurb', labels, data.map(d => d.kekeruhan_ntu), '#d53f8c', 'Turbidity (NTU)');
+            updateChart('chartTemp', labels, data.map(d => d.suhu_celsius), '#ed8936', 'Temperature (°C)');
+        }
+
+        function updateChart(canvasId, labels, data, color, label) {
+            const ctx = document.getElementById(canvasId).getContext('2d');
+            
+            if (charts[canvasId]) charts[canvasId].destroy();
+            
+            const gradient = ctx.createLinearGradient(0, 0, 0, 250);
+            gradient.addColorStop(0, `${color}66`);
+            gradient.addColorStop(1, 'rgba(0,0,0,0)');
+            
+            charts[canvasId] = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        borderColor: color,
+                        backgroundColor: gradient,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 5,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { 
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `${label}: ${context.parsed.y.toFixed(2)}`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { 
+                            grid: { display: false },
+                            ticks: { 
+                                color: '#94a3b8',
+                                maxTicksLimit: 10
+                            }
+                        },
+                        y: { 
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: { color: '#94a3b8' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateSeverityChart(severityData) {
+            const ctx = document.getElementById('statSeverity').getContext('2d');
+            
+            if (charts.severity) charts.severity.destroy();
+            
+            const data = [
+                severityData.low || 0,
+                severityData.medium || 0,
+                severityData.high || 0,
+                severityData.critical || 0
+            ];
+            
+            charts.severity = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Low (0-25)', 'Medium (25-50)', 'High (50-75)', 'Critical (75+)'],
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [
+                            'rgba(45, 206, 137, 0.8)',
+                            'rgba(255, 193, 7, 0.8)',
+                            'rgba(253, 126, 20, 0.8)',
+                            'rgba(245, 54, 92, 0.8)'
+                        ],
+                        borderColor: [
+                            '#2dce89',
+                            '#ffc107',
+                            '#fd7e14',
+                            '#f5365c'
+                        ],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { 
+                                color: '#ffffff',
+                                padding: 15,
+                                font: { size: 12 }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => {
+                                    const label = context.label || '';
+                                    const value = context.parsed || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateJobChart(jobs) {
+            const ctx = document.getElementById('statJob').getContext('2d');
+            
+            if (charts.job) charts.job.destroy();
+            
+            const sortedJobs = jobs.sort((a, b) => b.count - a.count).slice(0, 10);
+            
+            charts.job = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sortedJobs.map(j => j.job_id.substring(0, 20)),
+                    datasets: [{
+                        label: 'Anomaly Count',
+                        data: sortedJobs.map(j => j.count),
+                        backgroundColor: 'rgba(99, 179, 237, 0.8)',
+                        borderColor: '#63b3ed',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => {
+                                    const job = sortedJobs[context.dataIndex];
+                                    return [
+                                        `Count: ${job.count}`,
+                                        `Avg Score: ${job.avg_score.toFixed(1)}`,
+                                        `Max Score: ${job.max_score.toFixed(1)}`
+                                    ];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { 
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: { color: '#94a3b8' }
+                        },
+                        y: { 
+                            grid: { display: false },
+                            ticks: { color: '#94a3b8' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateForecastChart(forecast) {
+            const ctx = document.getElementById('forecastChart').getContext('2d');
+            
+            if (charts.forecast) charts.forecast.destroy();
+            
+            const labels = forecast.map(f => new Date(f.timestamp).toLocaleTimeString('id-ID', {hour: '2-digit', minute: '2-digit'}));
+            const values = forecast.map(f => f.predicted_value);
+            const lowerBounds = forecast.map(f => f.lower_bound);
+            const upperBounds = forecast.map(f => f.upper_bound);
+            
+            charts.forecast = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Predicted TDS',
+                        data: values,
+                        borderColor: '#63b3ed',
+                        backgroundColor: 'rgba(99, 179, 237, 0.1)',
+                        fill: false,
+                        tension: 0.4,
+                        borderWidth: 3
+                    }, {
+                        label: 'Upper Bound',
+                        data: upperBounds,
+                        borderColor: 'rgba(245, 54, 92, 0.5)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        pointRadius: 0
+                    }, {
+                        label: 'Lower Bound',
+                        data: lowerBounds,
+                        borderColor: 'rgba(45, 206, 137, 0.5)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        pointRadius: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: { color: '#ffffff' }
+                        }
+                    },
+                    scales: {
+                        x: { 
+                            grid: { display: false },
+                            ticks: { color: '#94a3b8' }
+                        },
+                        y: { 
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            ticks: { color: '#94a3b8' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- INIT & AUTO-REFRESH ---
+        async function init() {
+            await Promise.all([
+                fetchHealth(),
+                fetchStats(),
+                fetchMLStatus(),
+                fetchMLSummary(),
+                fetchLatestSensor(),
+                refreshSensor()
+            ]);
+            
+            updateClock();
+            setInterval(updateClock, 1000);
+            
+            setInterval(() => {
+                fetchHealth();
+                fetchStats();
+                fetchMLStatus();
+                fetchLatestSensor();
+                
+                if (currentTab === 'overview') fetchMLSummary();
+                else if (currentTab === 'sensor') refreshSensor();
+                else if (currentTab === 'ml') refreshMLAnomalies();
+                else if (currentTab === 'statistics') refreshStatistics();
+                else if (currentTab === 'prediction') refreshPredictions();
+                else if (currentTab === 'system') refreshSystemInfo();
+            }, REFRESH_INTERVAL);
+        }
+
+        // Start application
+        init();
+
+        // Event listeners
+        document.getElementById('mlTimeRange').addEventListener('change', refreshMLAnomalies);
+        document.getElementById('mlMinScore').addEventListener('change', refreshMLAnomalies);
+        document.getElementById('mlJobFilter').addEventListener('change', refreshMLAnomalies);
+    </script>
+
+</body>
+</html> 
