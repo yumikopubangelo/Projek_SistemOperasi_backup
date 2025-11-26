@@ -326,7 +326,7 @@ def create_prediction_blueprint(es_client):
             logger.error(f"[PREDICTION ERROR] Summary: {e}", exc_info=True)
             return jsonify({
                 "status": "error",
-                "message": str(e),
+                "message": "Failed to compute prediction summary. Please contact support if the issue persists.",
             }), 500
 
     return prediction_bp
