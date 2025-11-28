@@ -2,8 +2,31 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load .env file
-load_dotenv()
+# ============================================
+# CRITICAL FIX: Load .env with explicit path
+# ============================================
+def load_environment():
+    """Load .env file with explicit path resolution"""
+    # Get the directory where config.py lives (core/)
+    current_dir = Path(__file__).parent.resolve()
+    env_file = current_dir / ".env"
+    
+    if env_file.exists():
+        print(f"[CONFIG] Loading .env from: {env_file}")
+        load_dotenv(env_file, override=True)
+        return True
+    else:
+        print(f"[CONFIG] WARNING: .env not found at {env_file}")
+        # Try parent directory
+        parent_env = current_dir.parent / ".env"
+        if parent_env.exists():
+            print(f"[CONFIG] Loading .env from parent: {parent_env}")
+            load_dotenv(parent_env, override=True)
+            return True
+    return False
+
+# Load environment BEFORE accessing os.getenv
+load_environment()
 
 class Config:
     """Configuration class loaded from .env file"""
@@ -11,7 +34,7 @@ class Config:
     # Elasticsearch Configuration
     ELASTIC_HOST = os.getenv("ELASTIC_HOST", "https://localhost:9200")
     ELASTIC_USER = os.getenv("ELASTIC_USER", "elastic")
-    ELASTIC_PASS = os.getenv("ELASTIC_PASS")
+    ELASTIC_PASS = os.getenv("ELASTIC_PASS")  # Required
     ELASTIC_INDEX = os.getenv("ELASTIC_INDEX", "depot_air_qc_data")
     ELASTIC_CA_CERT = os.getenv("ELASTIC_CA_CERT", "http_ca.crt")
     
@@ -19,7 +42,7 @@ class Config:
     SERVER_HOST = os.getenv("SERVER_HOST", "0.0.0.0")
     SERVER_PORT = int(os.getenv("SERVER_PORT", "5000"))
     SERVER_THREADS = int(os.getenv("SERVER_THREADS", "4"))
-    SECRET_KEY = os.getenv("SECRET_KEY")
+    SECRET_KEY = os.getenv("SECRET_KEY")  # Required
     
     # Telegram Configuration
     TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -51,14 +74,17 @@ class Config:
     LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
     LOG_FILE = os.getenv("LOG_FILE", "aquaguard.log")
     
-    # ML Job Names (optional)
+    # ML Job Names
     ML_JOB_IDS = ["anomali_kekeruhan", "prediksi_tds_jenuh"]
 
-    
     @classmethod
     def validate(cls):
         """Validate required configuration"""
         errors = []
+        
+        # Debug: Print what was loaded
+        print(f"[CONFIG DEBUG] ELASTIC_PASS loaded: {bool(cls.ELASTIC_PASS)}")
+        print(f"[CONFIG DEBUG] SECRET_KEY loaded: {bool(cls.SECRET_KEY)}")
         
         # Check required fields
         if not cls.ELASTIC_PASS:
@@ -113,12 +139,12 @@ class Config:
         print(f"Log Level: {cls.LOG_LEVEL}")
         print("=" * 70 + "\n")
         
-@staticmethod
-def get_alert_config():
-    return {
-        "min_anomalies": Config.ALERT_MIN_ANOMALIES,
-        "time_window_hours": Config.ALERT_TIME_WINDOW_HOURS,
-        "cooldown_minutes": Config.ALERT_COOLDOWN_MINUTES,
-        "bot_token": Config.TELEGRAM_BOT_TOKEN,
-        "chat_id": Config.TELEGRAM_CHAT_ID,
-    }
+    @staticmethod
+    def get_alert_config():
+        return {
+            "min_anomalies": Config.ALERT_MIN_ANOMALIES,
+            "time_window_hours": Config.ALERT_TIME_WINDOW_HOURS,
+            "cooldown_minutes": Config.ALERT_COOLDOWN_MINUTES,
+            "bot_token": Config.TELEGRAM_BOT_TOKEN,
+            "chat_id": Config.TELEGRAM_CHAT_ID,
+        }
